@@ -3,6 +3,25 @@ namespace myImages {
 
     helpers._registerFactory("image", function(name: string) {
         switch(helpers.stringTrim(name)) {
+            case "2c_kCBUg#7hWX8?[7I#L":
+            case "mario":return img`
+. . . . . . . . . . . . . . . . 
+. . . . 2 2 2 2 2 . . . . . . . 
+. . . 2 2 2 2 2 2 2 2 2 . . . . 
+. . . e e e d d d f d . . . . . 
+. . e d e d d d d f d d d . . . 
+. . e d e e d d d d f d d d . . 
+. . e e d d d d d f f f f . . . 
+. . . . d d d d d d d d . . . . 
+. . . 2 2 8 2 2 2 2 . . . . . . 
+. . 2 2 2 8 2 2 8 2 2 2 . . . . 
+. 2 2 2 2 8 2 2 8 2 2 2 2 . . . 
+. 1 1 2 8 5 8 8 5 8 2 1 1 . . . 
+. 1 1 1 8 8 8 8 8 8 1 1 1 . . . 
+. 1 1 8 8 8 8 8 8 8 8 1 1 . . d 
+. . . 8 8 8 . . 8 8 8 . . . . . 
+. . f f f . . . . f f f . . . . 
+`;
             case "image1":
             case "myImage":return img`
 . . . . 7 7 7 7 7 . . . . . . . 

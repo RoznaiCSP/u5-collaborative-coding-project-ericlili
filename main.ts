@@ -1,21 +1,13 @@
+function luigi_and_yoshi_games () {
+    story.showPlayerChoices("", "")
+    return 0
+}
 // Don't forget to comment your code as you work!
-let mySprite = sprites.create(img`
-    . . . . . . . . . . . . . . . . 
-    . . . . 2 2 2 2 2 . . . . . . . 
-    . . . 2 2 2 2 2 2 2 2 2 . . . . 
-    . . . e e e d d d f d . . . . . 
-    . . e d e d d d d f d d d . . . 
-    . . e d e e d d d d f d d d . . 
-    . . e e d d d d d f f f f . . . 
-    . . . . d d d d d d d d . . . . 
-    . . . 2 2 8 2 2 2 2 . . . . . . 
-    . . 2 2 2 8 2 2 8 2 2 2 . . . . 
-    . 2 2 2 2 8 2 2 8 2 2 2 2 . . . 
-    . 1 1 2 8 5 8 8 5 8 2 1 1 . . . 
-    . 1 1 1 8 8 8 8 8 8 1 1 1 . . . 
-    . 1 1 8 8 8 8 8 8 8 8 1 1 . . d 
-    . . . 8 8 8 . . 8 8 8 . . . . . 
-    . . f f f . . . . f f f . . . . 
-    `, SpriteKind.Player)
-controller.moveSprite(mySprite)
-scene.setBackgroundColor(2)
+let Mario = sprites.create(assets.image`mario`, SpriteKind.Player)
+let Luigi = sprites.create(assets.image`myImage`, SpriteKind.Player)
+let yoshi = sprites.create(assets.image`myImage0`, SpriteKind.Player)
+scene.setBackgroundImage(assets.image`myImage1`)
+Mario.setPosition(78, 91)
+Luigi.setPosition(130, 91)
+yoshi.setPosition(32, 91)
+Mario.x += controller.dx()
